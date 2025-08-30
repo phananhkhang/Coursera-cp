@@ -1,252 +1,631 @@
 <!DOCTYPE html>
 <html class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <!-- npx @tailwindcss/cli -i var(--color-zinc-800)./src/input.css -o ./src/output.css --watch -->
 
-  <body>
-    <div class="bg-[#0F1114] w-full h-[40px] p-0">
-      <div class="px-[100px] py-[8px]">
-        <ul class="h-[40px] flex text-white gap-x-[20px] text-[16px] mt-[-7px]">
-          <li class="group hover:bg-white cursor-pointer px-[8px]">
-            <a
-              class="block mt-[7px] group-hover:text-black"
-              href="#
-             "
-              ><span class="text-[#E8EEF7] group-hover:text-black"
-                >Dành cho</span
-              >
-              Cá nhân</a
-            >
-          </li>
-          <div class="w-[152.29px] h-[10px] bg-white absolute top-[34px]"></div>
-          <li class="group hover:bg-white cursor-pointer px-[8px]">
-            <a class="block mt-[7px] group-hover:text-black" href="#"
-              ><span class="text-[#E8EEF7] group-hover:text-black"
-                >Dành cho</span
-              >
-              Doanh nghiệp</a
-            >
-          </li>
-          <li class="group hover:bg-white cursor-pointer px-[8px]">
-            <a class="block mt-[7px] group-hover:text-black" href="#"
-              ><span class="text-[#E8EEF7] group-hover:text-black"
-                >Dành cho</span
-              >
-              Trường đại học</a
-            >
-          </li>
-          <li class="group hover:bg-white cursor-pointer px-[8px]">
-            <a class="block mt-[7px] group-hover:text-black" href="#"
-              ><span class="text-[#E8EEF7] group-hover:text-black"
-                >Dành cho</span
-              >
-              Chính phủ</a
-            >
-          </li>
-        </ul>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coursera-cp</title>
+  <link href="src/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- npx @tailwindcss/cli -i var(--color-zinc-800)./src/input.css -o ./src/output.css --watch -->
+
+<body>
+  <div class="bg-[#0F1114] w-full h-[40px] p-0">
+    <div class="px-[100px] py-[8px]">
+      <ul class="h-[40px] flex text-white gap-x-[20px] text-[16px] mt-[-7px]">
+        <li class="group hover:bg-white cursor-pointer px-[8px]">
+          <a class="block mt-[7px] group-hover:text-black" href="#
+             "><span class="text-[#E8EEF7] group-hover:text-black">Dành cho</span>
+            Cá nhân</a>
+        </li>
+        <div class="w-[152.29px] h-[10px] bg-white absolute top-[34px]"></div>
+        <li class="group hover:bg-white cursor-pointer px-[8px]">
+          <a class="block mt-[7px] group-hover:text-black" href="#"><span
+              class="text-[#E8EEF7] group-hover:text-black">Dành cho</span>
+            Doanh nghiệp</a>
+        </li>
+        <li class="group hover:bg-white cursor-pointer px-[8px]">
+          <a class="block mt-[7px] group-hover:text-black" href="#"><span
+              class="text-[#E8EEF7] group-hover:text-black">Dành cho</span>
+            Trường đại học</a>
+        </li>
+        <li class="group hover:bg-white cursor-pointer px-[8px]">
+          <a class="block mt-[7px] group-hover:text-black" href="#"><span
+              class="text-[#E8EEF7] group-hover:text-black">Dành cho</span>
+            Chính phủ</a>
+        </li>
+      </ul>
     </div>
-    <div class="h-[65px] w-full bg-white">
-      <div class="px-[65px] py-[15px]">
-        <div
-          class="flex space-x-4 justify-center items-center absolute top-[52px] left-[86px]"
-        >
-          <div>
-            <img
-              class="w-[127px] h-[32px] cursor-pointer"
-              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZpZXdCb3g9IjAgMCAxMTU1IDE2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0xNTkuNzUgODEuNTRjMC00NC40OSAzNi42My04MC40NyA4Mi40My04MC40NyA0Ni4xMiAwIDgyLjc2IDM2IDgyLjc2IDgwLjQ3IDAgNDQuMTYtMzYuNjQgODAuOC04Mi43NiA4MC44LTQ1LjggMC04Mi40My0zNi42OC04Mi40My04MC44em0xMjUuNjEgMGMwLTIyLjI0LTE5LjMtNDEuODctNDMuMTgtNDEuODctMjMuNTUgMC00Mi44NSAxOS42My00Mi44NSA0MS44NyAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yIDIzLjkyIDAgNDMuMTgtMTkuNjMgNDMuMTgtNDIuMnptNzA1LjYzIDEuMzFjMC00OC43NCAzOS41OC04MS43OCA3NS41Ny04MS43OCAyNC41MyAwIDM4LjYgNy41MiA0OC4wOCAyMS45MmwzLjc3LTE5aDM2Ljc5djE1NS40aC0zNi43OWwtNC43NS0xNmMtMTAuNzkgMTEuNzgtMjQuMjEgMTktNDcuMSAxOS0zNS4zMy0uMDUtNzUuNTctMzEuMTMtNzUuNTctNzkuNTR6bTEyNS42MS0uMzNjLS4wOS0yMy41MjctMTkuNDctNDIuODM1LTQzLTQyLjgzNS0yMy41OSAwLTQzIDE5LjQxMS00MyA0M3YuMTY1YzAgMjEuNTkgMTkuMyA0MC44OSA0Mi44NiA0MC44OSAyMy44NSAwIDQzLjE0LTE5LjMgNDMuMTQtNDEuMjJ6TTk0NS43OCAyMlY0aC00MC4yM3YxNTUuMzloNDAuMjNWNzUuNjZjMC0yNS4xOSAxMi40NC0zOC4yNyAzNC0zOC4yNyAxLjQzIDAgMi43OS4xIDQuMTIuMjNMOTkxLjM2LjExYy0yMC45Ny4xMS0zNi4xNyA3LjMtNDUuNTggMjEuODl6bS00MDQuMjcuMDF2LTE4bC00MC4yMy4wOS4zNCAxNTUuMzcgNDAuMjMtLjA5LS4yMi04My43MmMtLjA2LTI1LjE4IDEyLjM1LTM4LjI5IDMzLjkzLTM4LjM0IDEuMzc2LjAwNCAyLjc1Mi4wODEgNC4xMi4yM0w1ODcuMSAwYy0yMSAuMTctMzYuMjIgNy4zOS00NS41OSAyMi4wMXpNMzM4Ljg4IDk5LjJWNC4wMWg0MC4yMlY5NC4zYzAgMTkuOTUgMTEuMTIgMzEuNzMgMzAuNDIgMzEuNzMgMjEuNTkgMCAzNC0xMy4wOSAzNC0zOC4yOFY0LjAxaDQwLjI0djE1NS4zOGgtNDAuMjF2LTE4Yy05LjQ4IDE0LjcyLTI0Ljg2IDIxLjkyLTQ2LjEyIDIxLjkyLTM1Ljk4LjAxLTU4LjU1LTI2LjE2LTU4LjU1LTY0LjExem0zOTEuNzQtMTcuNDhjLjA5LTQzLjUxIDMxLjIzLTgwLjc0IDgwLjYyLTgwLjY1IDQ1LjguMDkgNzguMTEgMzYuNzggNzggODAgLjAxIDQuMjczLS4zMyA4LjU0LTEgMTIuNzZsLTExOC40MS0uMjJjNC41NCAxOC42NSAxOS44OSAzMi4wOSA0My4xMiAzMi4xNCAxNC4wNiAwIDI5LjEyLTUuMTggMzguMy0xNi45NGwyNy40NCAyMmMtMTQuMTEgMTkuOTMtMzkgMzEuNjYtNjUuNDggMzEuNjEtNDYuNzUtLjE2LTgyLjY3LTM1LjIzLTgyLjU5LTgwLjd6bTExOC4xMi0xNi4xNGMtMi4yNi0xNS43LTE4LjU5LTI3Ljg0LTM3Ljg5LTI3Ljg3LTE4LjY1IDAtMzMuNzEgMTEuMDYtMzkuNjMgMjcuNzNsNzcuNTIuMTR6bS0yNjEuNCA1OS45NGwzNS43Ni0xOC43MmM1LjkxIDEyLjgxIDE3LjczIDIwLjM2IDM0LjQ4IDIwLjM2IDE1LjQzIDAgMjEuMzQtNC45MiAyMS4zNC0xMS44MiAwLTI1LTg0LjcxLTkuODUtODQuNzEtNjcgMC0zMS41MiAyNy41OC00OC4yNiA2MS43Mi00OC4yNiAyNS45NCAwIDQ4LjkyIDExLjQ5IDYxLjQgMzIuODNsLTM1LjQ0IDE4Ljc1Yy01LjI1LTEwLjUxLTE1LjEtMTYuNDItMjcuNTgtMTYuNDItMTIuMTQgMC0xOC4wNiA0LjI3LTE4LjA2IDExLjQ5IDAgMjQuMyA4NC43MSA4Ljg3IDg0LjcxIDY3IDAgMzAuMjEtMjQuNjIgNDguNTktNjQuMzUgNDguNTktMzMuODItLjAzLTU3LjQ2LTExLjE5LTY5LjI3LTM2Ljh6TTAgODEuNTRDMCAzNi43MyAzNi42My43NCA4Mi40My43NGMyNy45NDctLjE5NiA1NC4xODIgMTMuNzM3IDY5LjY3IDM3bC0zNC4zNCAxOS45MmE0Mi45NzIgNDIuOTcyIDAgMDAtMzUuMzMtMTguMzJjLTIzLjU1IDAtNDIuODUgMTkuNjMtNDIuODUgNDIuMiAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yYTQyLjUwMiA0Mi41MDIgMCAwMDM2LjMxLTIwbDM0IDIwLjI4Yy0xNS4zMDcgMjMuOTU1LTQxLjkwMiAzOC40MzEtNzAuMzMgMzguMjhDMzYuNjMgMTYyLjM0IDAgMTI1LjY2IDAgODEuNTR6IiBmaWxsPSIjMDA1NkQyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4="
-              alt=""
-            />
-          </div>
-          <button
-            type="button"
-            class="w-[132.51px] h-[37.6px] border border-[#0056D2] rounded-[4px] text-[#0056D2] hover:bg-[#F0F6FF] cursor-pointer"
-          >
-            Khám phá <i class="ri-arrow-down-s-line"></i>
-          </button>
-          <div>
-            <input
-              type="text"
-              placeholder="Bạn muốn học gì?"
-              class="w-[480px] h-[44px] border border-[#E8EEF7] rounded-[200px] p-[20px] outline-none relative"
-            />
-            <a
-              href="#"
-              class="absolute w-8 h-8 border border-[#E8EEF7] rounded-[200px] top-[6px] left-[731px] flex justify-center items-center text-[#F2F5FA] bg-[#0056D2]"
-            >
-              <i class="ri-search-line"></i>
-            </a>
-          </div>
-          <div class="flex gap-x-[15px] absolute right-[-580px] text-[13px]">
-            <a href="#" class="text-[#5B6780] mt-[10px]">Bằng cấp trực tuyến</a>
-            <a href="#" class="text-[#5B6780] mt-[10px]">Nghề nghiệp</a>
-            <a href="#" class="text-[#0056D2] mt-[10px] hover:underline"
-              >Đăng nhập</a
-            >
-            <a
-              href="#"
-              class="text-[#0056D2] font-bold border border-[#0056D2] w-[121.33px] h-[40px] rounded-[4px] flex items-center hover:bg-[#F0F6FF] hover:text-[#003B9D]"
-            >
-              Tham gia miễn phí
-            </a>
-          </div>
+  </div>
+  <div class="h-[65px] w-full bg-white">
+    <div class="px-[65px] py-[15px]">
+      <div class="flex space-x-4 justify-center items-center absolute top-[52px] left-[86px]">
+        <div>
+          <img class="w-[127px] h-[32px] cursor-pointer"
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZpZXdCb3g9IjAgMCAxMTU1IDE2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0xNTkuNzUgODEuNTRjMC00NC40OSAzNi42My04MC40NyA4Mi40My04MC40NyA0Ni4xMiAwIDgyLjc2IDM2IDgyLjc2IDgwLjQ3IDAgNDQuMTYtMzYuNjQgODAuOC04Mi43NiA4MC44LTQ1LjggMC04Mi40My0zNi42OC04Mi40My04MC44em0xMjUuNjEgMGMwLTIyLjI0LTE5LjMtNDEuODctNDMuMTgtNDEuODctMjMuNTUgMC00Mi44NSAxOS42My00Mi44NSA0MS44NyAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yIDIzLjkyIDAgNDMuMTgtMTkuNjMgNDMuMTgtNDIuMnptNzA1LjYzIDEuMzFjMC00OC43NCAzOS41OC04MS43OCA3NS41Ny04MS43OCAyNC41MyAwIDM4LjYgNy41MiA0OC4wOCAyMS45MmwzLjc3LTE5aDM2Ljc5djE1NS40aC0zNi43OWwtNC43NS0xNmMtMTAuNzkgMTEuNzgtMjQuMjEgMTktNDcuMSAxOS0zNS4zMy0uMDUtNzUuNTctMzEuMTMtNzUuNTctNzkuNTR6bTEyNS42MS0uMzNjLS4wOS0yMy41MjctMTkuNDctNDIuODM1LTQzLTQyLjgzNS0yMy41OSAwLTQzIDE5LjQxMS00MyA0M3YuMTY1YzAgMjEuNTkgMTkuMyA0MC44OSA0Mi44NiA0MC44OSAyMy44NSAwIDQzLjE0LTE5LjMgNDMuMTQtNDEuMjJ6TTk0NS43OCAyMlY0aC00MC4yM3YxNTUuMzloNDAuMjNWNzUuNjZjMC0yNS4xOSAxMi40NC0zOC4yNyAzNC0zOC4yNyAxLjQzIDAgMi43OS4xIDQuMTIuMjNMOTkxLjM2LjExYy0yMC45Ny4xMS0zNi4xNyA3LjMtNDUuNTggMjEuODl6bS00MDQuMjcuMDF2LTE4bC00MC4yMy4wOS4zNCAxNTUuMzcgNDAuMjMtLjA5LS4yMi04My43MmMtLjA2LTI1LjE4IDEyLjM1LTM4LjI5IDMzLjkzLTM4LjM0IDEuMzc2LjAwNCAyLjc1Mi4wODEgNC4xMi4yM0w1ODcuMSAwYy0yMSAuMTctMzYuMjIgNy4zOS00NS41OSAyMi4wMXpNMzM4Ljg4IDk5LjJWNC4wMWg0MC4yMlY5NC4zYzAgMTkuOTUgMTEuMTIgMzEuNzMgMzAuNDIgMzEuNzMgMjEuNTkgMCAzNC0xMy4wOSAzNC0zOC4yOFY0LjAxaDQwLjI0djE1NS4zOGgtNDAuMjF2LTE4Yy05LjQ4IDE0LjcyLTI0Ljg2IDIxLjkyLTQ2LjEyIDIxLjkyLTM1Ljk4LjAxLTU4LjU1LTI2LjE2LTU4LjU1LTY0LjExem0zOTEuNzQtMTcuNDhjLjA5LTQzLjUxIDMxLjIzLTgwLjc0IDgwLjYyLTgwLjY1IDQ1LjguMDkgNzguMTEgMzYuNzggNzggODAgLjAxIDQuMjczLS4zMyA4LjU0LTEgMTIuNzZsLTExOC40MS0uMjJjNC41NCAxOC42NSAxOS44OSAzMi4wOSA0My4xMiAzMi4xNCAxNC4wNiAwIDI5LjEyLTUuMTggMzguMy0xNi45NGwyNy40NCAyMmMtMTQuMTEgMTkuOTMtMzkgMzEuNjYtNjUuNDggMzEuNjEtNDYuNzUtLjE2LTgyLjY3LTM1LjIzLTgyLjU5LTgwLjd6bTExOC4xMi0xNi4xNGMtMi4yNi0xNS43LTE4LjU5LTI3Ljg0LTM3Ljg5LTI3Ljg3LTE4LjY1IDAtMzMuNzEgMTEuMDYtMzkuNjMgMjcuNzNsNzcuNTIuMTR6bS0yNjEuNCA1OS45NGwzNS43Ni0xOC43MmM1LjkxIDEyLjgxIDE3LjczIDIwLjM2IDM0LjQ4IDIwLjM2IDE1LjQzIDAgMjEuMzQtNC45MiAyMS4zNC0xMS44MiAwLTI1LTg0LjcxLTkuODUtODQuNzEtNjcgMC0zMS41MiAyNy41OC00OC4yNiA2MS43Mi00OC4yNiAyNS45NCAwIDQ4LjkyIDExLjQ5IDYxLjQgMzIuODNsLTM1LjQ0IDE4Ljc1Yy01LjI1LTEwLjUxLTE1LjEtMTYuNDItMjcuNTgtMTYuNDItMTIuMTQgMC0xOC4wNiA0LjI3LTE4LjA2IDExLjQ5IDAgMjQuMyA4NC43MSA4Ljg3IDg0LjcxIDY3IDAgMzAuMjEtMjQuNjIgNDguNTktNjQuMzUgNDguNTktMzMuODItLjAzLTU3LjQ2LTExLjE5LTY5LjI3LTM2Ljh6TTAgODEuNTRDMCAzNi43MyAzNi42My43NCA4Mi40My43NGMyNy45NDctLjE5NiA1NC4xODIgMTMuNzM3IDY5LjY3IDM3bC0zNC4zNCAxOS45MmE0Mi45NzIgNDIuOTcyIDAgMDAtMzUuMzMtMTguMzJjLTIzLjU1IDAtNDIuODUgMTkuNjMtNDIuODUgNDIuMiAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yYTQyLjUwMiA0Mi41MDIgMCAwMDM2LjMxLTIwbDM0IDIwLjI4Yy0xNS4zMDcgMjMuOTU1LTQxLjkwMiAzOC40MzEtNzAuMzMgMzguMjhDMzYuNjMgMTYyLjM0IDAgMTI1LjY2IDAgODEuNTR6IiBmaWxsPSIjMDA1NkQyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4="
+            alt="" />
+        </div>
+        <button type="button"
+          class="w-[132.51px] h-[37.6px] border border-[#0056D2] rounded-[4px] text-[#0056D2] hover:bg-[#F0F6FF] cursor-pointer">
+          Khám phá <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div>
+          <input type="text" placeholder="Bạn muốn học gì?"
+            class="w-[480px] h-[44px] border border-[#E8EEF7] rounded-[200px] p-[20px] outline-none relative" />
+          <a href="#"
+            class="absolute w-8 h-8 border border-[#E8EEF7] rounded-[200px] top-[6px] left-[731px] flex justify-center items-center text-[#F2F5FA] bg-[#0056D2]">
+            <i class="ri-search-line"></i>
+          </a>
+        </div>
+        <div class="flex gap-x-[15px] absolute right-[-580px] text-[13px]">
+          <a href="#" class="text-[#5B6780] mt-[10px]">Bằng cấp trực tuyến</a>
+          <a href="#" class="text-[#5B6780] mt-[10px]">Nghề nghiệp</a>
+          <a href="#" class="text-[#0056D2] mt-[10px] hover:underline">Đăng nhập</a>
+          <a href="#"
+            class="text-[#0056D2] font-bold border border-[#0056D2] w-[121.33px] h-[40px] rounded-[4px] flex items-center hover:bg-[#F0F6FF] hover:text-[#003B9D]">
+            Tham gia miễn phí
+          </a>
         </div>
       </div>
+    </div>
+  </div>
+  <div>
+    <div class="bg-[#0056D2]">
+      <img class="w-[703.99px] h-[488.89px] ml-[776px]"
+        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/2gChXpyTrOhqnUi2prKyuW/8f13a4cc2eb26d2a8c9f876de0f8ac0e/BC-4874_LOHP_takeover_Non-NAMER_30-_off-Limited_time_Desktop-720x500.png?auto=format%2Ccompress&dpr=2&w=1440&h=1000&q=40" />
     </div>
     <div>
-      <div class="bg-[#0056D2]">
+      <div class="absolute top-[247px] left-[87px] text-white">
         <img
-          class="w-[703.99px] h-[488.89px] ml-[776px]"
-          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/2gChXpyTrOhqnUi2prKyuW/8f13a4cc2eb26d2a8c9f876de0f8ac0e/BC-4874_LOHP_takeover_Non-NAMER_30-_off-Limited_time_Desktop-720x500.png?auto=format%2Ccompress&dpr=2&w=1440&h=1000&q=40"
-        />
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/2a637xzvKIB6fNNiOThU3m/dcb6ad3e505829033751c73b72118992/coursera-plus-logo-whitetext-blueplus.png?auto=format%2Ccompress&dpr=2&w=1168&h=16"
+          alt="" class="w-[161px] h-[16px]" />
+        <div class="text-[40px]">Discover new skills and big savings</div>
       </div>
-      <div>
-        <div class="absolute top-[247px] left-[87px] text-white">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/2a637xzvKIB6fNNiOThU3m/dcb6ad3e505829033751c73b72118992/coursera-plus-logo-whitetext-blueplus.png?auto=format%2Ccompress&dpr=2&w=1168&h=16"
-            alt=""
-            class="w-[161px] h-[16px]"
-          />
-          <div class="text-[40px]">Discover new skills and big savings</div>
+      <p class="absolute top-[329px] left-[86px] text-[15px] text-white">
+        Get 30% off a year of Coursera Plus and build skills with 10,000+
+        programs from
+        <br />
+        top companies like Google, IBM, and more.
+      </p>
+      <div class="absolute top-[410px] left-[85px] flex items-center">
+        <a href="#">
+          <button
+            class="w-[202.65px] h-[49.6px] bg-white text-[#0056D2] mr-[20px] rounded-[3px] text-[15px] hover:bg-[#F0F6FF] cursor-pointer">
+            Save on Coursera Plus
+          </button>
+        </a>
+        <a href="#">
+          <button
+            class="w-[152.89] h-[49.6px] bg-transparent text-white border border-white rounded-[3px] px-[30px] py-[20px] flex items-center text-[15px] cursor-pointer">
+            Save on Teams
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="#">
+    <div class="text-[28px] absolute top-[653px] left-[375px] text-[#0F1114] font-medium">
+      We collaborate with
+      <span class="text-[#0056D2] hover:underline">350+ leading universities and companies</span>
+    </div>
+  </a>
+  <div class="h-[299px] bg-[#F2F5FA]">
+    <div class="flex gap-x-[39px] absolute top-[750px] left-[214px] justify-center items-center">
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/77hmeEJo3ZPlURCU02fD52/aa37b7f7b52285ba350acac62d8af5c1/illinois-3.png?auto=format%2Ccompress&dpr=2&h=32"
+          alt="" class="w-[156.5px] h-[32px]" />
+      </a>
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XkOucZz6pMLV5DPvXCgCL/1777129a58b0a62b237bd28e9956afe8/duke-3.png?auto=format%2Ccompress&dpr=2&h=32"
+          alt="" class="w-[93px] h-[32px]" />
+      </a>
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=2&h=37"
+          alt="" class="w-[108px] h-[37px]" />
+      </a>
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/60SA8pGxPXMmJf4n7umK1H/ccec31bbe2358210bf8391dcba6cd2f1/umich.png?auto=format%2Ccompress&dpr=2&h=55"
+          alt="" class="w-[52.5px] h-[55px]" />
+      </a href="#">
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3toC4I7jbWxiedfxiyNjtT/735faeaf976a9692f425f8c3a7d125dc/1000px-IBM_logo.svg.png?auto=format%2Ccompress&dpr=2&h=37"
+          alt="" class="w-[92.5px] h-[37px]" />
+      </a>
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/FHOd44z40jTFsSSao84AM/d1e357f5650a23bf2936114112d44445/imperial.png?auto=format%2Ccompress&dpr=2&h=35"
+          alt="" class="w-[134px] h-[35px]" />
+      </a>
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4FSFmNXuDIzTvFb7n0v4mK/704ae9e0a7981fb6415f4cb4609bbbb3/stanford.svg?auto=format%2Ccompress&dpr=2&h=27"
+          alt="" class="w-[125.5] h-[27px]" />
+      </a>
+      <a href="#">
+        <img
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1ZeiauXe5bPProvfuIo7o2/55d005d42979ab585cdfa01f825b7d4f/penn.svg?auto=format%2Ccompress&dpr=2&h=37"
+          alt="" class="w-[112.5px] h-[37px]" />
+      </a>
+    </div>
+  </div>
+  <div
+    class="w-[1344px] h-[105.6px] border border-[#DAE1ED] rounded-[24px] flex px-[30px] py-[30px] gap-x-[20px] items-center justify-center absolute top-[960px] left-[89px] mb-[84px]">
+    <h2 class="text-[19px] w-[295.75px] h-[48px] text-[#0F1114] font-[450]">Điều gì đưa bạn đến Coursera hôm nay?</h2>
+    <div class="text-[13px] flex gap-x-[20px] font-[450]">
+      <a href="#">
+        <button
+          class="w-[201.71px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+          <div
+            class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-15px]">
+            <i class="ri-rocket-line"></i></div> Bắt đầu sự nghiệp
+          <br>
+          của tôi
+        </button>
+      </a>
+      <a href="#">
+        <button
+          class="w-[206.51px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+          <div
+            class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-15px]">
+            <i class="fa-brands fa-mixer"></i></div>Thay đổi sự nghiệp
+          <br>
+          của tôi
+        </button>
+      </a>
+      <a href="#">
+        <button
+          class="w-[261.59px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+          <div
+            class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-13px]">
+            <i class="fa-solid fa-arrow-up-right-dots"></i></div>Phát triển trong vị trí hiện tại
+          <br>
+          của tôi
+        </button>
+      </a>
+      <a href="#">
+        <button
+          class="w-[264.84px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+          <div
+            class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-18px]">
+            <i class="fa-solid fa-binoculars"></i></div>Khám phá các chủ đề ngoài
+          <br>
+          công việc
+        </button>
+      </a>
+    </div>
+  </div>
+  <!-- Use CSS -->
+  <style>
+    .container {
+      width: 1344px;
+      height: 604.19px;
+      background-color: #F2F3FA;
+      border-radius: 20px;
+      margin-left: 89px;
+      margin-top: 236px;
+      position: relative;
+    }
+
+    .List {
+      position: absolute;
+      top: 18px;
+      left: 269px;
+      font-size: 13px
+    }
+
+    .List .normal-button {
+      margin-right: 1px;
+      border: 1px solid #8495B0;
+      padding: 4px 12px;
+      border-radius: 26px;
+      cursor: pointer;
+    }
+
+    .List .special-button {
+      margin-right: 60px;
+      border: 1px solid #8495B0;
+      padding: 4px 12px;
+      border-radius: 26px;
+      cursor: pointer;
+    }
+
+    .arrow-down {
+      display: inline-block;
+      margin-left: 12px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .wall+a .normal-button {
+      background-color: #5B6780;
+      color: white;
+      cursor: pointer;
+    }
+
+    div .wall {
+      display: inline-block;
+      width: 1px;
+      height: 29px;
+      background: #C1CAD9;
+      position: absolute;
+      left: 128px;
+    }
+
+    .normal-button:hover {
+      background: #F0F6FF;
+      border-color: #2763BD;
+    }
+
+    .special-button:hover {
+      background: #F0F6FF;
+      border-color: #2763BD;
+    }
+
+    .wall+a .normal-button:hover {
+      background: #0047AF;
+      border-color: #2763BD;
+    }
+
+    .content h2 {
+      font-size: 30px;
+      color: #0F1114;
+      margin-bottom: 11px;
+    }
+
+    .content p {
+      font-size: 16px;
+      color: #0F1114;
+      margin-bottom: 25px;
+    }
+
+    .content button {
+      display: flex;
+      text-align: left;
+      width: 189.33px;
+      height: 72px;
+      color: white;
+      background-color: #0056D2;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      position: absolute;
+      top: 172px;
+      left: 32px;
+    }
+
+    .section-two .pic1 img {
+      width: 324.61px;
+      height: 182.59px;
+      object-fit: cover;
+    }
+
+    .section-two .pic2 img {
+      width: 324.61px;
+      height: 182.59px;
+      object-fit: cover;
+    }
+
+    .section-two .pic3 img {
+      width: 324.61px;
+      height: 182.59px;
+      object-fit: cover;
+    }
+
+    .section-two .pic1 {
+      width: 340.61px;
+      height: 514.59px;
+      background-color: white;
+      margin-left: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #DAE1ED;
+      border-radius: 15px;
+    }
+
+    .section-two .pic2 {
+      width: 340.61px;
+      height: 514.59px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #DAE1ED;
+      border-radius: 15px;
+    }
+
+    .section-two .pic3 {
+      width: 340.61px;
+      height: 514.59px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #DAE1ED;
+      border-radius: 15px;
+    }
+
+    .section-two {
+      display: flex;
+      gap: 24px;
+      position: absolute;
+      top: 85px;
+      left: 209px;
+      justify-content: space-between;
+    }
+
+    .info-pic1 {
+      margin-left: 60px;
+    }
+
+    .info-pic2 {
+      margin-left: 60px;
+    }
+
+    .info-pic3 {
+      margin-left: 70px;
+    }
+
+    .info-pic1 h3 {
+      font-size: 20px;
+      margin-top: 7px;
+      margin-bottom: 5px;
+    }
+
+    .info-pic1 .c1 {
+      font-size: 13px;
+      margin-bottom: 8px;
+      font-weight: lighter;
+    }
+
+    .info-pic1 .c2 {
+      font-size: 13px;
+      margin-bottom: 15px;
+      font-weight: lighter;
+    }
+
+    .info-pic1 .c2 .note {
+      font-weight: bold;
+    }
+
+    .info-pic1 .identify {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .info-pic1 a {
+      display: block;
+      font-size: 13px;
+      color: #0056D2;
+      margin-bottom: 12px;
+    }
+
+    .info-pic2 h3 {
+      font-size: 20px;
+      margin-top: 7px;
+      margin-bottom: 5px;
+    }
+
+    .info-pic2 .c1 {
+      font-size: 13px;
+      margin-bottom: 8px;
+      font-weight: lighter;
+    }
+
+    .info-pic2 .c2 {
+      font-size: 13px;
+      margin-bottom: 15px;
+      font-weight: lighter;
+    }
+
+    .info-pic2 .c2 .note {
+      font-weight: bold;
+    }
+
+    .info-pic2 .identify {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .info-pic2 a {
+      display: block;
+      font-size: 13px;
+      color: #0056D2;
+      margin-bottom: 8px;
+    }
+
+    .info-pic3 h3 {
+      font-size: 20px;
+      margin-top: 7px;
+      margin-bottom: 5px;
+    }
+
+    .info-pic3 .c1 {
+      font-size: 13px;
+      margin-bottom: 8px;
+      font-weight: lighter;
+    }
+
+    .info-pic3 .c2 {
+      font-size: 13px;
+      margin-bottom: 15px;
+      font-weight: lighter;
+    }
+
+    .info-pic3 .c2 .note {
+      font-weight: bold;
+    }
+
+    .info-pic3 .identify {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .info-pic3 a {
+      display: block;
+      font-size: 13px;
+      color: #0056D2;
+      margin-bottom: 12px;
+    }
+
+    .pic1 .align {
+      margin-left: -41px;
+    }
+
+    .pic2 .align {
+      margin-top: -55px;
+      margin-left: -43px;
+    }
+
+    .pic3 .align {
+      margin-top: 15px;
+      margin-left: -50px;
+    }
+
+    .content button:hover {
+      background-color: #0048B0;
+      cursor: pointer;
+    }
+
+    .section-two .pic1:hover {
+      transform: scale(1.04);
+      transition: all 0.4s ease;
+      box-shadow: 0 0 15px rgb(194, 194, 194);
+    }
+
+    .section-two .pic2:hover {
+      transform: scale(1.04);
+      transition: all 0.5s ease;
+      box-shadow: 0 0 15px rgb(194, 194, 194);
+    }
+
+    .section-two .pic3:hover {
+      transform: scale(1.04);
+      transition: all 0.5s ease;
+      box-shadow: 0 0 15px rgb(194, 194, 194);
+    }
+  </style>
+  <div class="full-section">
+    <div class="container">
+      <div class="List">
+        <a href="#"><button class="special-button">Sơ cấp <div class="arrow-down"><i class="ri-arrow-down-s-line"></i>
+            </div></button></a>
+        <div class="wall"></div>
+        <a href="#"><button class="normal-button">Phổ biến</button></a>
+        <a href="#"><button class="normal-button">Kỹ thuật phần mềm & CNTT</button></a>
+        <a href="#"><button class="normal-button">Kinh doanh</button></a>
+        <a href="#"><button class="normal-button">Bán hàng & tiếp thị</button></a>
+        <a href="#"><button class="normal-button">Khoa học & phân tích dữ liệu</button></a>
+        <a href="#"><button class="normal-button">Chăm sóc sức khỏe</button></a>
+      </div>
+      <div class="section-one">
+        <div class="content">
+          <h2>Chọn vai trò
+            <br>
+            của bạn</h2>
+          <p>Có được kiến thức và kỹ
+            <br>
+            năng bạn cần để thăng tiến.</p>
+          <button>Khám phá tất cả các
+            <br>
+            vai trò</button>
         </div>
-        <p class="absolute top-[329px] left-[86px] text-[15px] text-white">
-          Get 30% off a year of Coursera Plus and build skills with 10,000+
-          programs from
-          <br />
-          top companies like Google, IBM, and more.
-        </p>
-        <div class="absolute top-[410px] left-[85px] flex items-center">
-          <a href="#">
-            <button
-              class="w-[202.65px] h-[49.6px] bg-white text-[#0056D2] mr-[20px] rounded-[3px] text-[15px] hover:bg-[#F0F6FF] cursor-pointer"
-            >
-              Save on Coursera Plus
-            </button>
-          </a>
-          <a href="#">
-            <button
-              class="w-[152.89] h-[49.6px] bg-transparent text-white border border-white rounded-[3px] px-[30px] py-[20px] flex items-center text-[15px] cursor-pointer"
-            >
-              Save on Teams
-            </button>
-          </a>
+      </div>
+      <div class="section-two">
+        <div class="pic1" href="#">
+          <div class="align">
+            <div>
+              <img
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/6gKoZ1AVu36CMpmu3N3BZw/51e59b6ed5e46b50bfb98c738b3b2329/data-analyst-hero_2x.png?auto=format%2Ccompress&dpr=2&w=720"
+                alt="">
+            </div>
+            <div class="info-pic1">
+              <h3>Data Analyst</h3>
+              <p class="c1">A Data Analyst collects, cleans, and interprets data,
+                using tools like Excel, SQL, and Tableau to analyze
+                trends and provide insights for decisions.</p>
+              <p class="c2"><span class="note">Nếu bạn thích:</span> analyzing data to find insights,
+                creating reports and visualizations, working with
+                spreadsheets and databases</p>
+              <div class="identify">Định danh</div>
+              <a href="">IBM Data Analyst</a>
+              <a href="">Meta Data Analyst</a>
+              <a href="#">+ thêm 5</a>
+            </div>
+          </div>
+        </div>
+        <div class="pic2" href="#">
+          <div class="align">
+            <div>
+              <img
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/5rYF1dB5rQdD8Ude60Vcgk/a64d122febc9a54ee56402dd3d012042/Data_Scientist-hero_2x.png?auto=format%2Ccompress&dpr=2&w=720"
+                alt="">
+            </div>
+            <div class="info-pic2">
+              <h3>Data Scientist</h3>
+              <p class="c1">A Data Scientist analyzes large datasets to uncover
+                insights, using statistics, machine learning, and
+                visualization to inform business strategies.</p>
+              <p class="c2">Nếu bạn thích: analyzing complex datasets,
+                developing machine learning models, solving
+                statistical problems</p>
+              <div class="identify">Định danh</div>
+              <a href="">IBM Data Science</a>
+            </div>
+          </div>
+        </div>
+        <div class="pic3" href="#">
+          <div class="align">
+            <div>
+              <img
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/69cNAmQMmrlgOZiqDhQ2cP/b53c174c81e14d7a4c1a5d307db9a128/Machine_Learning_Engineer-hero_2x.png?auto=format%2Ccompress&dpr=2&w=720"
+                alt="">
+            </div>
+            <div class="info-pic3">
+              <h3>Machine Learning Engineer</h3>
+              <p class="c1">A Machine Learning Engineer builds and optimizes
+                algorithms that enable computers to learn from
+                data, using large datasets and neural networks.</p>
+              <p class="c2">Nếu bạn thích: developing machine learning
+                models, working with large datasets, coding in
+                python or r
+                <br>
+                <br>
+              </p>
+              <div class="identify">Định danh</div>
+              <a href="">Machine Learning</a>
+              <a href="">MathWorks Computer Vision Engineer</a>
+              <a>+ thêm 1</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <a href="#">
-      <div
-        class="text-[28px] absolute top-[653px] left-[375px] text-[#0F1114] font-medium"
-      >
-        We collaborate with
-        <span class="text-[#0056D2] hover:underline"
-          >350+ leading universities and companies</span
-        >
-      </div>
-    </a>
-    <div class="h-[299px] bg-[#F2F5FA]">
-      <div
-        class="flex gap-x-[39px] absolute top-[750px] left-[214px] justify-center items-center"
-      >
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/77hmeEJo3ZPlURCU02fD52/aa37b7f7b52285ba350acac62d8af5c1/illinois-3.png?auto=format%2Ccompress&dpr=2&h=32"
-            alt=""
-            class="w-[156.5px] h-[32px]"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XkOucZz6pMLV5DPvXCgCL/1777129a58b0a62b237bd28e9956afe8/duke-3.png?auto=format%2Ccompress&dpr=2&h=32"
-            alt=""
-            class="w-[93px] h-[32px]"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=2&h=37"
-            alt=""
-            class="w-[108px] h-[37px]"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/60SA8pGxPXMmJf4n7umK1H/ccec31bbe2358210bf8391dcba6cd2f1/umich.png?auto=format%2Ccompress&dpr=2&h=55"
-            alt=""
-            class="w-[52.5px] h-[55px]"
-          />
-        </a href="#">
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3toC4I7jbWxiedfxiyNjtT/735faeaf976a9692f425f8c3a7d125dc/1000px-IBM_logo.svg.png?auto=format%2Ccompress&dpr=2&h=37"
-            alt=""
-            class="w-[92.5px] h-[37px]"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/FHOd44z40jTFsSSao84AM/d1e357f5650a23bf2936114112d44445/imperial.png?auto=format%2Ccompress&dpr=2&h=35"
-            alt=""
-            class="w-[134px] h-[35px]"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4FSFmNXuDIzTvFb7n0v4mK/704ae9e0a7981fb6415f4cb4609bbbb3/stanford.svg?auto=format%2Ccompress&dpr=2&h=27"
-            alt=""
-            class="w-[125.5] h-[27px]"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1ZeiauXe5bPProvfuIo7o2/55d005d42979ab585cdfa01f825b7d4f/penn.svg?auto=format%2Ccompress&dpr=2&h=37"
-            alt=""
-            class="w-[112.5px] h-[37px]"
-          />
-        </a>
-      </div>
-    </div>
-    <div class="w-[1344px] h-[105.6px] border border-[#DAE1ED] rounded-[24px] flex px-[30px] py-[30px] gap-x-[20px] items-center justify-center absolute top-[960px] left-[89px] mb-[84px]">
-      <h2 class="text-[19px] w-[295.75px] h-[48px] text-[#0F1114] font-[450]">Điều gì đưa bạn đến Coursera hôm nay?</h2>
-      <div class="text-[13px] flex gap-x-[20px] font-[450]">
-        <a href="#">
-          <button class="w-[201.71px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]"><div class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-15px]"><i class="ri-rocket-line"></i></div> Bắt đầu sự nghiệp 
-            <br>
-            của tôi</button>
-        </a>
-        <a href="#">
-          <button class="w-[206.51px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]"><div class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-15px]"><i class="fa-brands fa-mixer"></i></div>Thay đổi sự nghiệp 
-            <br>
-            của tôi</button>
-        </a>
-        <a href="#">
-          <button class="w-[261.59px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]"><div class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-13px]"><i class="fa-solid fa-arrow-up-right-dots"></i></div>Phát triển trong vị trí hiện tại 
-            <br>
-            của tôi</button>
-        </a>
-       <a href="#">
-          <button class="w-[264.84px] h-[56px] border border-[#DAE1ED] rounded-[16px] text-left flex items-center justify-center gap-x-[16px] cursor-pointer origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.1)]"><div class="w-[42px] h-[42px] bg-[#0056D2] text-white rounded-[10px] flex items-center justify-center text-[20px] ml-[-18px]"><i class="fa-solid fa-binoculars"></i></div>Khám phá các chủ đề ngoài 
-            <br>
-            công việc</button>
-       </a>
-      </div>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
